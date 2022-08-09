@@ -8,7 +8,7 @@ const verdadeiro = NaN || undefined || 0 || 123
 
 console.log(verdadeiro)
 
-// Usando o AND (&&), ele retorna o primeiro false que encontrar e já por ali mesmo. Em caso de verrdadeiro, ele retorna o último.
+// Usando o AND (&&), ele retorna o primeiro false que encontrar e já para por ali mesmo. Em caso de verrdadeiro, ele retorna o último.
 
 const verdade2 = 1 && 22 && 99
 
