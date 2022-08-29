@@ -31,3 +31,49 @@ function soma2(a, b = 10, c = 5) {
 soma2(10, undefined, 10)
 
 // Caso queira que uma parâmetro assuma o valor padrão ele se encontra no meio de vários outros. Basta passar o seu valor como undefined, assim ele receberá o valor padrão.
+
+function retornNome({ nome, sobrenome, idade}) {
+    console.log(nome, sobrenome, idade)
+}
+
+retornNome({ nome: 'Otávio', sobrenome: 'Augusto', idade: 21})
+
+function retornaValor([valor1, valor2, valor3]) {
+    console.log(valor1, valor2, valor3)
+}
+
+retornaValor([10, 69, 24])
+
+// ------------------------------------------------------------
+
+// O rest operator (...) tem sempre que ser o último parâmetro da função.
+function conta(operador, acumulador, ...numeros) {
+
+    console.log(arguments)
+
+    for(let numero of numeros) {
+
+        if (operador === '+') {
+            acumulador += numero
+        }
+
+        if (operador === '-') {
+            acumulador -= numero
+        }
+
+        if (operador === '/') {
+            acumulador /= numero
+        }
+
+        if (operador === '*') {
+            acumulador *= numero
+        }
+        
+    }
+
+    console.log(acumulador)
+}
+
+conta('*', 1, 20, 40, 60, 80)
+
+
