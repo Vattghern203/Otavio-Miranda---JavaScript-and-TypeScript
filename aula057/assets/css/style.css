@@ -24,6 +24,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  transition: all 0.7s;
 }
 
 form input, form label, form button {
@@ -55,4 +56,37 @@ form button {
 
 form button:hover {
   background: var(--primary-color-darker);
+}
+
+.calculadora {
+  width: 400px;
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.display {
+  width: 100%;
+  font-size: 2em;
+  text-align: right;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  font-size: 1em;
+  border: none;
+  background-color: #dfdfdf;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b4b4b4;
+}
+
+.btn-eq {
+  background-color: #AFCBFA;
+}
+
+.btn-eq:hover {
+  background-color: #879bbe;
 }
